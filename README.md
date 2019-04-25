@@ -1,2 +1,0 @@
-# Dots
-Dots test project

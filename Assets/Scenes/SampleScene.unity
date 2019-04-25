@@ -151,6 +151,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rows: 4
   Cols: 4
+  dotPrefab: {fileID: 7363913018390008538, guid: 226c42f6754ae9e4ca2656dd4271b531,
+    type: 3}
 --- !u!4 &179147983
 Transform:
   m_ObjectHideFlags: 0
