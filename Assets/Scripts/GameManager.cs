@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    LevelSettings levelSettings;
+    public Transform dotPrefab; 
+
+    BoardSettings boardSettings;
+    GameGrid grid;
+    Dot[] dots; 
         
     private void Awake()
     {
-        GameObject ls = GameObject.FindGameObjectWithTag("LevelSettings");
-        levelSettings = ls.GetComponent<LevelSettings>();
+        LevelSettings levelSettings = GameObject.FindObjectOfType<LevelSettings>();
+        boardSettings = levelSettings == null ? new BoardSettings() : levelSettings.boardSettings;
+        grid = new GameGrid(boardSettings, dotPrefab);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
 }
