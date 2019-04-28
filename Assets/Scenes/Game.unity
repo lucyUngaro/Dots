@@ -120,6 +120,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &503600186 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+    type: 3}
+  m_PrefabInstance: {fileID: 1949727963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1ceb0d295d4a234a8a36d6ba47b7c1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dotPrefab: {fileID: 7363913018390008538, guid: 226c42f6754ae9e4ca2656dd4271b531,
     type: 3}
+  levelSettings: {fileID: 503600186}
 --- !u!4 &714604351
 Transform:
   m_ObjectHideFlags: 0
@@ -415,6 +428,176 @@ PrefabInstance:
         type: 3}
       propertyPath: levelSettings.boardHeight
       value: 649.60004
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.numberOfRows
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.numberOfCols
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.dotSpacing
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.purple.r
+      value: 0.48240158
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.purple.g
+      value: 0.2880918
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.purple.b
+      value: 0.735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.red.g
+      value: 0.3083228
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.red.r
+      value: 0.8207547
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.red.b
+      value: 0.15873085
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.green.b
+      value: 0.58981025
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.green.r
+      value: 0.44045925
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.green.g
+      value: 0.9245283
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.blue.r
+      value: 0.41901034
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.blue.g
+      value: 0.7139203
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.blue.b
+      value: 0.8301887
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.yellow.b
+      value: 0.19784619
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.yellow.r
+      value: 0.735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: colorSettings.yellow.g
+      value: 0.735849
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[3]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[4]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[5]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[6]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[7]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[8]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[9]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[10]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[11]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[12]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[13]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[14]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[15]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
+        type: 3}
+      propertyPath: boardSettings.initialTiles.Array.data[0]
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1936f17dd04d7f4f9c825811047c754, type: 3}

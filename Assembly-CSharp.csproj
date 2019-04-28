@@ -63,10 +63,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Dot.cs" />
-    <Compile Include="Assets\Scripts\Game.cs" />
+    <Compile Include="Assets\Scripts\DotLines.cs" />
+    <Compile Include="Assets\Scripts\DotsGame.cs" />
     <Compile Include="Assets\Scripts\GameGrid.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LevelSettings.cs" />
+    <Compile Include="Assets\Scripts\Line.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/lucyu/Dots/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
