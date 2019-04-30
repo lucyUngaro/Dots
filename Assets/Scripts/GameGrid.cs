@@ -8,11 +8,12 @@ using UnityEngine;
 /// Dots will reference their corresponding cell to determine positioning. 
 /// </summary>
 
-// A struct to represent a "cell" on the board
-public struct Cell
+// A class to represent a "cell" on the board
+public class Cell
 {
     public int row, col;
     public float x, y;
+    public Dot dot = null;
 
     public Cell(int r, int c, float xPos, float yPos)
     {
@@ -75,6 +76,19 @@ public class GameGrid
         return cells[index];
     }
 
+    // Overload method to get the cell using row/col instead of index
+    public Cell GetCell(int row, int col)
+    {
+        int index = GetIndexFromRowCol(row, col);
+
+        return index < cells.Length && index >= 0 ? GetCell(index) : null;
+    }
+
+    public Cell[] GetCells()
+    {
+        return cells;
+    }
+
     // The y value of cells in this row
     private float GetCellYFromRow(int row) 
     {
@@ -85,6 +99,11 @@ public class GameGrid
     private float GetCellXFromCol(int col)
     {
         return startPoint.x + (col % cols) * cellSpacing;
+    }
+
+    public int GetIndexFromRowCol(int row, int col)
+    {
+        return row * cols + col;
     }
 
 }

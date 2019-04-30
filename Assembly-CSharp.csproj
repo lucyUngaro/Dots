@@ -62,13 +62,22 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Libraries\DOTween\Modules\DOTweenModuleAudio.cs" />
+    <Compile Include="Assets\Libraries\DOTween\Modules\DOTweenModulePhysics.cs" />
+    <Compile Include="Assets\Libraries\DOTween\Modules\DOTweenModulePhysics2D.cs" />
+    <Compile Include="Assets\Libraries\DOTween\Modules\DOTweenModuleSprite.cs" />
+    <Compile Include="Assets\Libraries\DOTween\Modules\DOTweenModuleUI.cs" />
+    <Compile Include="Assets\Libraries\DOTween\Modules\DOTweenModuleUnityVersion.cs" />
+    <Compile Include="Assets\Libraries\DOTween\Modules\DOTweenModuleUtils.cs" />
     <Compile Include="Assets\Scripts\Dot.cs" />
-    <Compile Include="Assets\Scripts\DotLines.cs" />
-    <Compile Include="Assets\Scripts\DotsGame.cs" />
+    <Compile Include="Assets\Scripts\DotManager.cs" />
+    <Compile Include="Assets\Scripts\DotSelectionTween.cs" />
+    <Compile Include="Assets\Scripts\Game.cs" />
     <Compile Include="Assets\Scripts\GameGrid.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\LevelSettings.cs" />
     <Compile Include="Assets\Scripts\Line.cs" />
+    <Compile Include="Assets\Scripts\LineSpawner.cs" />
+    <None Include="Assets\Libraries\DOTween\readme.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/lucyu/Dots/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
@@ -272,6 +281,9 @@
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.0f2/Editor/Data/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="DOTween">
+      <HintPath>C:/Users/lucyu/Dots/Assets/Libraries/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>C:/Users/lucyu/Dots/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
