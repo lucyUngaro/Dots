@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class manages all of the dots and their creation/destruction
+/// </summary>
+/// 
 public class DotManager : MonoBehaviour
 {
     public Transform dotPrefab;
@@ -15,6 +19,7 @@ public class DotManager : MonoBehaviour
         
     private void Awake()
     {
+        // These settings can be edited in the inspector
         boardSettings = levelSettings == null ? new BoardSettings() : levelSettings.boardSettings;
         colorSettings = levelSettings == null ? new ColorSettings() : levelSettings.colorSettings;
         dotsGame = new Game(this);
@@ -69,6 +74,17 @@ public class DotManager : MonoBehaviour
     {
         if (!mouseDown) return;
         dotsGame.CheckForDisconnected(dot);
+    }
+
+    void Update()
+    {
+        if (!mouseDown) return;
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            mouseDown = false;
+            dotsGame.OnMouseUp();
+        }
     }
 
     public void ClearMatch(List<ConnectedDot> selectedDots)
@@ -156,17 +172,6 @@ public class DotManager : MonoBehaviour
 
         return dots;
 
-    }
-
-    void Update()
-    {
-        if (!mouseDown) return;
-
-        if (Input.GetMouseButtonUp(0))
-        {
-            mouseDown = false;
-            dotsGame.OnMouseUp();
-        }
     }
 
     public Color SelectRandomDotColor()

@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+///  A simple line with a start point and end point. Before the end point is chosen, the line will follow the mouse.
+/// </summary>
 public class Line : MonoBehaviour
 {
     public Transform startPoint;

@@ -38,7 +38,10 @@ public class GameGrid
         this.boardSettings = boardSettings;
         rows = boardSettings.numberOfRows;
         cols = boardSettings.numberOfCols;
-        cellSpacing = boardSettings.dotSpacing; // The spacing between dots (can be modified in LevelSettings)
+
+        // The spacing between dots (can be modified in LevelSettings):  Constrain the value so the dots don't go past the screen and also don't overlap
+        float dotSpacing = Mathf.Min(1, Mathf.Max(boardSettings.dotSpacing, 0.1f));
+        cellSpacing = Mathf.Min((Screen.height * dotSpacing) / rows, (Screen.width * dotSpacing) / cols); 
 
         cells = new Cell[rows * cols];
 

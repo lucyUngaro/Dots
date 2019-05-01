@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Spawns a line at a dot.
+/// The line follows the mouse until the end dot is chosen. 
+/// Once a line's end dot is chosen, a new line is spawned at that dot. 
+/// </summary>
+
 public class LineSpawner : MonoBehaviour
 {
     private Line currentLine;

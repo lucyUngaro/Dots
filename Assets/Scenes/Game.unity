@@ -205,7 +205,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 2.65e-42, y: 2.938737e-39, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -387,7 +387,7 @@ PrefabInstance:
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}
       propertyPath: boardSettings.dotSpacing
-      value: 40
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}
@@ -452,17 +452,17 @@ PrefabInstance:
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}
       propertyPath: colorSettings.yellow.b
-      value: 0.19784619
+      value: 0.1788003
       objectReference: {fileID: 0}
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}
       propertyPath: colorSettings.yellow.r
-      value: 0.735849
+      value: 0.7735849
       objectReference: {fileID: 0}
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}
       propertyPath: colorSettings.yellow.g
-      value: 0.735849
+      value: 0.7735849
       objectReference: {fileID: 0}
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}

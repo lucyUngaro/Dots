@@ -2,12 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This class handles the mechanics of the game
+/// </summary>
+/// 
 public enum Directions { none, right, left, up, down };
 
+// A struct that contains: 
+// 1. A dot that has been selected
+// 2. The path the mouse was traveling in when the dot was selected
 public struct ConnectedDot
 {
     public Dot dot;
-    public Directions direction; // Directions will be used to determine when a dot is unselected
+    public Directions direction;
 
     public ConnectedDot(Dot dot, Directions direction)
     {
@@ -34,7 +41,7 @@ public class Game
     {
         if ((currentSelected.dot != null && !CheckForMatch(dot)) || squareActivated) return; // There's already a selected dot and the new one doesn't match, so return
 
-        if (IsPreviousConnection(dot)) // If this is the same dot selected before the current dot, disconnect the current dot
+        if (IsPreviousConnection(dot)) // If this is the same dot selected before the current dot, the user has gone backwards
         {
             DisconnectCurrentDot();
             return;

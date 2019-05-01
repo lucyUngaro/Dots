@@ -10,7 +10,6 @@ public class Dot : MonoBehaviour
     private Color color;
     private DotManager manager;
     public bool markedForRemoval;
-    public DotSelectionTween currentSelectionTween;
 
     private void Awake()
     {
@@ -80,12 +79,7 @@ public class Dot : MonoBehaviour
     public void Destroy()
     {
         markedForRemoval = true;
-        transform.DOScale(0f, 0.2f).OnComplete(()=>Destroy(gameObject));
-
-        if (currentSelectionTween != null)
-        {
-            Destroy(currentSelectionTween.gameObject);
-        }
+        transform.DOScale(0f, 0.2f).OnComplete(()=>Destroy(gameObject)); // Tween to scale 0 and then destroy
     }
 
 }
