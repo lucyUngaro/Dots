@@ -19,11 +19,17 @@ public class DotManager : MonoBehaviour
         
     private void Awake()
     {
+        Invoke("CreateBoard", 0.1f);
+    }
+
+    private void CreateBoard()
+    {
         // These settings can be edited in the inspector
         boardSettings = levelSettings == null ? new BoardSettings() : levelSettings.boardSettings;
         colorSettings = levelSettings == null ? new ColorSettings() : levelSettings.colorSettings;
         dotsGame = new Game(this);
-        grid = new GameGrid(boardSettings);
+        grid = new GameObject("GameGrid").AddComponent<GameGrid>();
+        grid.CreateGrid(boardSettings);
 
         CreateInitialTiles();
     }

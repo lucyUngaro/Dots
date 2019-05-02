@@ -10,7 +10,6 @@ public class BoardSettings
 {
     public int numberOfRows = 4;
     public int numberOfCols = 4;
-    public float dotSpacing = 0.6f; // The spacing between dots (will be constrained so it doesn't go past the edges of the screen
     public enum Colors { red, green, blue, purple, yellow };
     public Colors[] initialTiles;
 

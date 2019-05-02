@@ -39,13 +39,15 @@ public class Game
 
     public void OnDotSelected(Dot dot)
     {
-        if ((currentSelected.dot != null && !CheckForMatch(dot)) || squareActivated) return; // There's already a selected dot and the new one doesn't match, so return
+        if ((currentSelected.dot != null && !CheckForMatch(dot))) return; // There's already a selected dot and the new one doesn't match, so return
 
         if (IsPreviousConnection(dot)) // If this is the same dot selected before the current dot, the user has gone backwards
         {
             DisconnectCurrentDot();
             return;
         }
+
+        if (squareActivated) return; // If the square powerup has been activated, shouldn't make any more matches
 
         Directions newDirection = GetDirection(dot);
         currentSelected = new ConnectedDot(dot, newDirection);

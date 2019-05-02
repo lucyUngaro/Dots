@@ -16,6 +16,14 @@ public class Dot : MonoBehaviour
         // The initial position should be above the board, until it is set to its cell position
         Vector3 newPosition = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height * 1.5f, 0));
         transform.position = new Vector3(transform.position.x, newPosition.y, transform.position.z);
+
+        // Adjust scale for different screen resolutions
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+        float width = GetWidthOfSprite(sprite);
+        float screenSize = Screen.width > Screen.height ? Screen.height : Screen.width;
+        float scale = screenSize / width * 0.06f;
+        transform.localScale *= scale;
+
     }
 
     public void SetParameters(DotManager manager, Color color)
@@ -82,4 +90,14 @@ public class Dot : MonoBehaviour
         transform.DOScale(0f, 0.2f).OnComplete(()=>Destroy(gameObject)); // Tween to scale 0 and then destroy
     }
 
+    private float GetWidthOfSprite(SpriteRenderer sprite)
+    {
+        Bounds bounds = sprite.bounds;
+        float rightPoint = bounds.center[0] + bounds.extents[0];
+        float leftPoint = bounds.center[0] - bounds.extents[0];
+        Vector3 rightEdge = Camera.main.WorldToScreenPoint(new Vector3(rightPoint, 0, 0));
+        Vector3 leftEdge = Camera.main.WorldToScreenPoint(new Vector3(leftPoint, 0, 0));
+
+        return rightEdge.x - leftEdge.x;
+    }
 }

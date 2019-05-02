@@ -205,7 +205,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 2.65e-42, y: 2.938737e-39, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 2.75508e-40, y: -1.2e-43, z: 2.23e-43, w: 2.2e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -322,7 +322,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -377,7 +377,7 @@ PrefabInstance:
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}
       propertyPath: boardSettings.numberOfRows
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}
@@ -387,7 +387,7 @@ PrefabInstance:
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}
       propertyPath: boardSettings.dotSpacing
-      value: 0.5
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}
@@ -467,7 +467,7 @@ PrefabInstance:
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}
       propertyPath: boardSettings.initialTiles.Array.data[1]
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}
@@ -542,7 +542,7 @@ PrefabInstance:
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}
       propertyPath: boardSettings.initialTiles.Array.data[0]
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4919246909137830887, guid: d1936f17dd04d7f4f9c825811047c754,
         type: 3}

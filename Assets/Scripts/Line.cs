@@ -19,7 +19,7 @@ public class Line : MonoBehaviour
         lineRenderer.startColor = lineRenderer.endColor = color;
         lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
         lineRenderer.alignment = LineAlignment.TransformZ;
-        lineRenderer.startWidth = lineRenderer.endWidth = 0.08f;
+        lineRenderer.startWidth = lineRenderer.endWidth = start.localScale.x / 1f;
         lineRenderer.SetPosition(0, startPoint.position);
     }
 

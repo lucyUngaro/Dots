@@ -24,24 +24,24 @@ public class Cell
     }
 }
 
-public class GameGrid
+public class GameGrid : MonoBehaviour
 { 
-    public int rows, cols;
+    private int rows, cols;
     private float cellSpacing;
     private Vector2 startPoint;
     private Cell[] cells;
     private Dot[] dots;
-    public BoardSettings boardSettings;
+    private BoardSettings boardSettings;
 
-    public GameGrid(BoardSettings boardSettings)
+    public void CreateGrid(BoardSettings boardSettings)
     {
         this.boardSettings = boardSettings;
         rows = boardSettings.numberOfRows;
         cols = boardSettings.numberOfCols;
 
-        // The spacing between dots (can be modified in LevelSettings):  Constrain the value so the dots don't go past the screen and also don't overlap
-        float dotSpacing = Mathf.Min(1, Mathf.Max(boardSettings.dotSpacing, 0.1f));
-        cellSpacing = Mathf.Min((Screen.height * dotSpacing) / rows, (Screen.width * dotSpacing) / cols); 
+        // The spacing between cells:
+        float screenSize = Mathf.Min(Screen.width, Screen.height);
+        cellSpacing = screenSize * 0.5f / 4;
 
         cells = new Cell[rows * cols];
 

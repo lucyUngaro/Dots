@@ -19,6 +19,7 @@ public class DotSelectionTween : MonoBehaviour
     {
         clonedDot = dot;
         transform.position = dot.transform.position;
+        transform.localScale = dot.transform.localScale;
         TweenColor(clonedDot.GetColor());
         TweenScale();
     }
