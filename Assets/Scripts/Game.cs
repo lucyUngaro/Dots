@@ -92,7 +92,7 @@ public class Game
                 float mouseDistance = Mathf.Max(Mathf.Abs(yDiff), Mathf.Abs(xDiff));
                 float dotDistance = Mathf.Abs(Vector3.Distance(dot.transform.position, previousDot.transform.position));
 
-                // If the mouse is less than halfway away from the current dot:
+                // If the mouse isn't far enough away from the current dot, don't disconnect it
                 if (mouseDistance < dotDistance / 4) return;
 
                 DisconnectCurrentDot();
